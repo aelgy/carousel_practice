@@ -1,14 +1,32 @@
 #carousel {
   margin: 50px;
-  display: flex;
-  flex-direction: column;
-}
-
-div.slide {
-  align-self: center;
+  position: relative;
 }
 
 img {
   height: 400px;
   width: 400px;
+}
+
+.btn {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px
+}
+
+.next {
+  right: 70%;
+  border-radius: 3px 0 0 3px;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
