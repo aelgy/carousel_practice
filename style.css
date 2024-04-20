@@ -1,0 +1,14 @@
+#carousel {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.slide {
+  align-self: center;
+}
+
+img {
+  height: 400px;
+  width: 400px;
+}
