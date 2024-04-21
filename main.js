@@ -21,3 +21,10 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
 
 }
+
+function dotSlides(dot) {
+  // const dot = Number(event.target.id);
+  let num = slideIndex += dot
+  showSlides(num);
+  slideIndex = 1;
+}
