@@ -23,8 +23,6 @@ function showSlides(n) {
 }
 
 function dotSlides(dot) {
-  // const dot = Number(event.target.id);
-  let num = slideIndex += dot
-  showSlides(num);
+  showSlides(slideIndex += dot);
   slideIndex = 1;
 }

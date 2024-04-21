@@ -59,6 +59,7 @@ div.dots {
   max-width: 720px;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .dot {
