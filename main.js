@@ -3,12 +3,11 @@ showSlides(slideIndex);
 
 // Next/previous control
 function plusSlides(n) {
-  showSlides(slideIndex + - n);
+  showSlides(slideIndex += n);
 }
 
 
 function showSlides(n) {
-  let i;
   let slides = document.querySelectorAll('.slide')
   if (n > slides.length) {
     slideIndex = 1;

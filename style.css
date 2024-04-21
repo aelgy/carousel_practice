@@ -1,12 +1,18 @@
 #carousel {
-  margin: 50px;
+  align-self: center;
   position: relative;
+  margin: 50px;
+}
+
+.slide {
+  display: none;
 }
 
 img {
-  height: 400px;
-  width: 400px;
+  width: 720px;
+  height: 720px;
 }
+
 
 .btn {
   position: absolute;
@@ -15,7 +21,8 @@ img {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  background-color: #000000;
+  opacity: 0.3;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -23,10 +30,25 @@ img {
 }
 
 .next {
-  right: 70%;
+  left: 668px;
   border-radius: 3px 0 0 3px;
 }
 
 .btn:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
